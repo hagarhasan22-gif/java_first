@@ -17,20 +17,20 @@ public class Class1 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
+        String res="";
+        if (number > 0) {
+            res="positive";
+        } else if (number < 0) {
+            res="negative";
+        } else {
+            res="zero";
+        }
 
         // Program to check positive, negative or zero
-        System.out.println("The number is " + checkNumber(number));
+        System.out.println("The number is " + res);
 
     }
 
-    private static String checkNumber(int n) {
-        if (n > 0) {
-            return "positive";
-        } else if (n < 0) {
-            return "negative";
-        } else {
-            return "zero";
-        }
-    }
+
 }
 
